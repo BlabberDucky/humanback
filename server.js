@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", 
+    origin: "https://chbotfront.vercel.app", 
     methods: ["GET", "POST"]
   }
 });
@@ -27,7 +27,7 @@ const openai = new OpenAI({
 
 
 const aiBio = {
-  lifeStory: `My name is Omar and I’m a computer science graduate who’s been in love with technology since childhood. I built my first game in Unity when I was about 11, and from there, I never really stopped building.`,
+  lifeStory: `My name is Omar Shaikh and I’m a computer science graduate who’s been in love with technology since childhood. I built my first game in Unity when I was about 11, and from there, I never really stopped building.`,
   pivotalMoments: `Publishing my first open-source project, presenting my capstone, and getting a real bug report from a stranger.`,
   childhoodExperience: `Joining a fan-made dev team at 12 showed me that strangers can create something amazing together.`,
   valuesFromBackground: `Moving a lot taught me to embrace change and adapt with curiosity.`,
